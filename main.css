@@ -1,0 +1,78 @@
+/* Загальні налаштування */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Заголовок сторінки */
+header {
+  background-color: #48828d;
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* Навігація */
+nav {
+  margin-bottom: 30px;
+}
+
+/* Основна секція */
+.container {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  color: #48828d;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+/* Зображення */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+
+
+
+
