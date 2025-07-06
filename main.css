@@ -33,9 +33,66 @@ header p {
 }
 
 /* Навігація */
-nav {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
   margin-bottom: 30px;
 }
+
+nav li {
+  background-color: #48828d;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li:hover {
+  background-color: #366972;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul.main-menu a {
+  background-color: #48828d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul.recipe-links a {
+  background-color: #e8f0f2; /* Світліше */
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid #48828d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+nav ul.recipe-links a:hover {
+  background-color: #d0e7ec;
+}
+
 
 /* Основна секція */
 .container {
@@ -46,6 +103,35 @@ nav {
   margin-bottom: 30px;
 }
 
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#syrnyky h2 {
+  color: #8b4513; /* теплий коричневий */
+  margin-bottom: 10px;
+}
+
+section#syrnyky h3 {
+  color: #2f4f4f;
+  margin-top: 20px;
+}
+
+section#syrnyky ul,
+section#syrnyky ol {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+section#syrnyky li {
+  margin-bottom: 5px;
+}
+
 .container h2 {
   color: #48828d;
   font-size: 1.8rem;
@@ -53,10 +139,20 @@ nav {
   padding: 5px;
 }
 
+/* Відео */
+video  {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Зображення */
 img {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin: 0 auto 30px;
   border-radius: 10px;
